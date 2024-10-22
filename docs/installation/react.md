@@ -4,7 +4,11 @@ title: 'React'
 sidebar_position: 1
 ---
 
-## Installation
+:::info
+Please make sure you have go through the [Environment Setup](/docs/environment-setup) before you proceed with the installation.
+:::
+
+### Installation
 
 To use Pocketto in a React project, you need to install the `pocketto` and `pocketto-react` package.
 
@@ -22,7 +26,7 @@ Make sure you are enabled decorators in your project. If not, you can enable it 
 }
 ```
 
-## Using Vite
+### Using Vite
 
 If you are using vite, make sure you have enable global and decorators in `vite.config.ts` file.
 
@@ -48,7 +52,7 @@ export default defineConfig({
 });
 ```
 
-## Usage
+### Usage
 
 <!-- In your `main.tsx` file, you need to wrap your application with the `PockettoProvider` component. -->
 You can connect to a database via the `DatabaseManager.connect()` function. <br />

@@ -7,6 +7,8 @@ title: Model
 
 Pocketto Model allow you to create a model for your data. It is a simple and easy way to create a model for your data.
 
+You can share the model in different platforms, so all the platforms can use the same model with same application logic.
+
 ### Define a Model
 
 To define a model, you need to create a class that extends the `Model` class. The `Model` class is a base class that provides the basic functionality for a model.

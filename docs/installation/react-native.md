@@ -4,7 +4,11 @@ title: 'React Native'
 sidebar_position: 2
 ---
 
-## Installation
+:::info
+Please make sure you have go through the [Environment Setup](/docs/environment-setup) before you proceed with the installation.
+:::
+
+### Installation
 
 To use Pocketto in a React project, you need to install the `pocketto` and `pocketto-react` package.
 
@@ -63,7 +67,6 @@ if (typeof localStorage !== 'undefined') {
 // require('crypto')
 ```
 
-
 Make sure you are enabled decorators in your project. If not, you can enable it by adding the following configuration to your `tsconfig.json` file.
 
 ```json
@@ -74,9 +77,44 @@ Make sure you are enabled decorators in your project. If not, you can enable it 
 }
 ```
 
+### iOS Configuration
+
+For iOS, make sure you are running pod install after installing the packages for native dependencies.
+
+```bash
+npx pod-install
+```
 
 ### Usage
 
 You can connect to a database via the `DatabaseManager.connect()` function. <br />
 Also, you need to set the environment to `react-native`. <br />
 You can also set the id method to `timestamp` which is optional. [All available id method](/docs/id) in here.
+
+You also need to manually install the SQLite adapter for PouchDB.
+
+```jsx
+import { AppRegistry } from 'react-native';
+import App from './App';
+
+import 'react-native-get-random-values';
+import PouchDB from 'pouchdb';
+import SQLiteAdapterFactory from 'pouchdb-adapter-react-native-sqlite';
+import SQLite from 'react-native-sqlite-2';
+import { DatabaseManager, p } from "pocketto";
+
+const SQLiteAdapter = SQLiteAdapterFactory(SQLite);
+PouchDB.plugin(SQLiteAdapter);
+
+p.setEnvironment("react-native");
+p.setIdMethod('timestamp');
+DatabaseManager.connect('default', {
+  adapter: 'react-native-sqlite',
+  dbName: 'default'
+}).then((localDb) => {
+  const remoteHost = Platform.OS === 'android' ? 'http://192.168.68.107:5984' : 'http://localhost:5984';
+  p.setRealtime(true);
+});
+
+AppRegistry.registerComponent(appName, () => App);
+```

@@ -18,7 +18,7 @@ npm install pocketto pocketto-react
 
 Make sure you are enabled decorators in your project. If not, you can enable it by adding the following configuration to your `tsconfig.json` file.
 
-```json
+```json title="tsconfig.json"
 {
   "compilerOptions": {
     "experimentalDecorators": true
@@ -30,7 +30,7 @@ Make sure you are enabled decorators in your project. If not, you can enable it 
 
 If you are using vite, make sure you have enable global and decorators in `vite.config.ts` file.
 
-```ts
+```ts title="vite.config.ts"
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
@@ -59,7 +59,7 @@ You can connect to a database via the `DatabaseManager.connect()` function. <br 
 Also, you need to set the environment to `browser`. <br />
 You can also set the id method to `timestamp` which is optional. [All available id method](/docs/id) in here.
 
-```tsx
+```tsx title="src/main.tsx"
 import { createRoot } from 'react-dom/client'
 import App from './App.tsx'
 import './index.css'

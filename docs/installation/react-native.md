@@ -25,7 +25,7 @@ npm install @tradle/react-native-http assert buffer https-browserify path-browse
 
 Add `postinstall` script to your `package.json` file.
 
-```json
+```json title="package.json"
 {
   "scripts": {
     "postinstall": "rn-nodeify --install fs,process,url,assert,crypto,http,https,os,buffer,stream,path --hack"
@@ -35,7 +35,7 @@ Add `postinstall` script to your `package.json` file.
 
 Add `shim.js` file to the root of your project.
 
-```js
+```js title="shim.js"
 import { shim } from 'react-native-quick-base64';
 shim();
 
@@ -69,7 +69,7 @@ if (typeof localStorage !== 'undefined') {
 
 Make sure you are enabled decorators in your project. If not, you can enable it by adding the following configuration to your `tsconfig.json` file.
 
-```json
+```json title="tsconfig.json"
 {
   "compilerOptions": {
     "experimentalDecorators": true
@@ -93,7 +93,7 @@ You can also set the id method to `timestamp` which is optional. [All available 
 
 You also need to manually install the SQLite adapter for PouchDB.
 
-```jsx
+```jsx title="index.js"
 import { AppRegistry } from 'react-native';
 import App from './App';
 

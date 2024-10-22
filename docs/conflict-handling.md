@@ -1,8 +1,7 @@
 ---
-sidebar_label: Data Conflict
-title: Data Conflict
-description: 'Learn how to handle data conflict in Pocketto.'
-sidebar_position: 5
+sidebar_label: Conflict Handling
+title: Conflict Handling
+sidebar_position: 4
 ---
 
-### Handle Data Conflict
+### Conflict Handling

@@ -1,7 +1,7 @@
 ---
 sidebar_label: 'Environment Setup'
 title: 'Environment Setup'
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 ### Introduction

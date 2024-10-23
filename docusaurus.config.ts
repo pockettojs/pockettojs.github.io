@@ -76,9 +76,13 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Guides',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        // {
+        //   to: '/blog',
+        //   label: 'Blog',
+        //   position: 'left',
+        // },
         {
           href: 'https://github.com/pockettojs/pocketto',
           label: 'GitHub',
@@ -93,7 +97,7 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
+              label: 'Guides',
               to: '/docs/intro',
             },
           ],
@@ -103,16 +107,16 @@ const config: Config = {
           items: [
             {
               label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              href: 'https://stackoverflow.com/questions/tagged/pocketto',
             },
             {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              href: 'https://discordapp.com/invite/pocketto',
             },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
+            // {
+            //   label: 'Twitter',
+            //   href: 'https://twitter.com/pocketto',
+            // },
           ],
         },
         {
@@ -129,7 +133,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Nix Software Enterprise. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Kent Ng and its contributors.`,
     },
     prism: {
       theme: prismThemes.github,

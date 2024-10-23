@@ -64,12 +64,11 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
     navbar: {
       title: 'Pocketto',
       logo: {
         alt: 'Pocketto Logo',
-        src: 'img/logo.svg',
+        src: 'img/apple-touch-icon.png',
       },
       items: [
         {

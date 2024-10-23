@@ -20,6 +20,9 @@ import { Model } from 'pocketto';
 
 @Relational
 export class SalesInvoiceItem extends Model {
+  static dbName = 'my-database';
+  static collectionName = 'SalesInvoiceItems';
+
   description!: string;
   quantity!: number;
   unitPrice!: number;
@@ -31,6 +34,9 @@ export class SalesInvoiceItem extends Model {
 
 @Relational
 export class SalesInvoice extends Model {
+  static dbName = 'my-database';
+  static collectionName = 'SalesInvoices';
+
   invoiceNumber!: string;
   customerName!: string;
   remarks?: string;

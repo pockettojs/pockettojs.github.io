@@ -7,7 +7,7 @@ title: Create a Node Module
 
 This is a tutorial to guide you on how to create a Node module. You can create a Node module to share your code with others or to reuse your code in different projects. Such as Node.js, Bun.js or React.js.
 
-:::info
+:::info Assumption
 This tutorial is assumed that you source code are all in `src` folder, an you have a `index.ts` file in the root directory of your project.
 
 If you have a different structure, you can modify the `tsconfig.json` file to match your project structure.

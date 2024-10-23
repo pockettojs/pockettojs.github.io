@@ -7,7 +7,7 @@ title: Source Code Protection
 
 This is a tutorial to guide you how to protect your source code to prevent reverse engineering.
 
-:::info
+:::info Assumption
 This tutorial is assumed that you source code are all in `src` folder, an you have a `index.ts` file in the root directory of your project.
 
 If you have a different structure, you can modify the `tsconfig.json` file to match your project structure.

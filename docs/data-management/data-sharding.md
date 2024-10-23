@@ -17,6 +17,7 @@ setMainDatabaseName('master');
 
 class SalesInvoice extends Model {
   static dbName = 'master';
+  static collectionName = 'SalesInvoices';
   static shardingMode = ShardingMode.TimeSeries;
 
   invoiceNumber!: string;
@@ -51,7 +52,7 @@ const invoice = await Invoice.create({
 }, '2021-01');
 ```
 
-You can manage the data by normal method still.
+You can manage the data by normal query methods.
 ```ts
 const savedInvoice = await Invoice.find(invoice.id);
 savedInvoice.remarks = 'This is a test invoice updated';

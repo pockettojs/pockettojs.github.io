@@ -8,7 +8,7 @@ sidebar_position: 2
 
 The `syncDatabases` method is used to synchronize the local database with the remote database. This method will fetch the data from the remote database and update the local database.
 
-:::info
+:::info Assumption
 This tutorial is assumed that you have already connected to a local database via [this tutorial](./database-manager.md).
 :::
 

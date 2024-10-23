@@ -6,6 +6,8 @@ sidebar_position: 1
 
 ## React Hooks API
 
+Pocketto provides a set of React hooks to interact with the Pocketto model in React.
+
 ### useRealtimeList
 
 By using `useRealtimeList()` hook, the listing will auto retrieve new model when there is new data.

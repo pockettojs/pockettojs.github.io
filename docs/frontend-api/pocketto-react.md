@@ -13,7 +13,7 @@ By using `useRealtimeList()` hook, the listing will auto retrieve new model when
 ```tsx
 import React, { useEffect } from 'react';
 import { useRealtimeList } from 'pocketto-react';
-import { SalesInvoice } from 'src/models/SalesInvoice';
+import { SalesInvoice } from 'src/models/SalesInvoice.p';
 
 export function SalesInvoiceList() {
   const invoices = useRealtimeList(SalesInvoice);
@@ -61,7 +61,7 @@ By using `useRealtime()` hook, it will auto reflected to other similar page that
 import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { useRealtime } from 'pocketto-react';
-import { SalesInvoice } from 'src/models/SalesInvoice';
+import { SalesInvoice } from 'src/models/SalesInvoice.p';
 
 export function SalesInvoiceList() {
   const { id } = useParams();

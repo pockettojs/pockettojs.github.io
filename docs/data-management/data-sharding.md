@@ -4,7 +4,7 @@ title: Data Sharding
 sidebar_position: 5
 ---
 
-### Data Sharding
+### Introduction
 
 Data sharding is a method of partitioning data across multiple servers. It is a technique used to distribute data across multiple servers to improve the performance and scalability of the database. Sharding is a common technique used in distributed databases to improve the performance of the database by distributing the data across multiple servers.
 

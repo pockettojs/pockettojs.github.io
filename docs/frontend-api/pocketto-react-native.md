@@ -16,7 +16,7 @@ import { Pressable, Text, View } from "react-native";
 import { useRoute } from "@react-navigation/native";
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
 import { useRealtimeList } from 'pocketto-react';
-import { SalesInvoice } from 'src/models/SalesInvoice';
+import { SalesInvoice } from 'src/models/SalesInvoice.p';
 
 export function SalesInvoiceList({
   navigation,
@@ -77,7 +77,7 @@ import { Pressable, Text, View } from "react-native";
 import { useRoute } from "@react-navigation/native";
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
 import { useRealtime } from 'pocketto-react';
-import { SalesInvoice } from 'src/models/SalesInvoice';
+import { SalesInvoice } from 'src/models/SalesInvoice.p';
 
 export function SalesInvoicePage({
   navigation,

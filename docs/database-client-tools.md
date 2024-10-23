@@ -1,7 +1,7 @@
 ---
 sidebar_label: 'Database Client Tools'
 title: 'Database Client Tools'
-sidebar_position: 7
+sidebar_position: 6
 ---
 
 ### Introduction

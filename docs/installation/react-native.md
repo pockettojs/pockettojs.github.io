@@ -89,7 +89,7 @@ npx pod-install
 
 You can connect to a database via the `DatabaseManager.connect()` function. <br />
 Also, you need to set the environment to `react-native`. <br />
-You can also set the id method to `timestamp` which is optional. [All available id method](/docs/id) in here.
+You can also set the id method to `timestamp` which is optional. [All available id method](/docs/data-modelling/id) in here.
 
 You also need to manually install the SQLite adapter for PouchDB.
 

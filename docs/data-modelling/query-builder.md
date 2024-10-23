@@ -31,7 +31,7 @@ const invoice = await SalesInvoice.query()
   .first();
 ```
 
-### Complex Queries
+### Complex Queries - Chaining
 
 You can build complex queries by chaining multiple `where` and `orWhere`.
 
@@ -44,16 +44,24 @@ const invoices = await SalesInvoice.query()
   .get();
 ```
 
+### Complex Queries - Callback
+
 You can also able to pass in a callback function to build complex queries.
 
+The callback function receives a `QueryBuilder` instance as an argument.
+
 ```ts
+import { QueryBuilder } from 'pocketto';
+
 const invoices = await SalesInvoice.query()
-  .where((query) => {
+  .where((query: QueryBuilder<SalesInvoice>) => {
     query.where('totalAmount', '>', 1000)
       .orWhere('customerName', '=', 'John Doe');
   })
   .get();
 ```
+
+### Complex Queries - Object
 
 Or, pass a object to build complex queries.
 

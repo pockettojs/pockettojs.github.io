@@ -46,7 +46,7 @@ export function SalesInvoiceList({
 There is also options that you can pass to `useRealtime()`:
 
 - animationDelay: Delay in milliseconds to wait your custom animation done. Default: `1ms`.
-- condition: A [query builder](/api-references/pocketto/query-builder) condition to filter and sorting the data.
+- condition: A [query builder](/docs/data-modelling/query-builder#complex-queries---callback) condition to filter and sorting the data.
 - onItemChange: Callback when the item is changed. After the `animationDelay` is done, it will emit `undefined`.
 - onItemCreate: Callback when the item is created. After the `animationDelay` is done, it will emit `undefined`.
 - onItemUpdate: Callback when the item is updated. After the `animationDelay` is done, it will emit `undefined`.

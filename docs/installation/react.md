@@ -57,7 +57,7 @@ export default defineConfig({
 <!-- In your `main.tsx` file, you need to wrap your application with the `PockettoProvider` component. -->
 You can connect to a database via the `DatabaseManager.connect()` function. <br />
 Also, you need to set the environment to `browser`. <br />
-You can also set the id method to `timestamp` which is optional. [All available id method](/docs/id) in here.
+You can also set the id method to `timestamp` which is optional. [All available id method](/docs/data-modelling/id) in here.
 
 ```tsx title="src/main.tsx"
 import { createRoot } from 'react-dom/client'

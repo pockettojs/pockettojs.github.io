@@ -110,10 +110,10 @@ const config: Config = {
               label: 'Stack Overflow',
               href: 'https://stackoverflow.com/questions/tagged/pocketto',
             },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/pocketto',
-            },
+            // {
+            //   label: 'Discord',
+            //   href: 'https://discordapp.com/invite/pocketto',
+            // },
             // {
             //   label: 'Twitter',
             //   href: 'https://twitter.com/pocketto',
@@ -123,10 +123,10 @@ const config: Config = {
         {
           title: 'More',
           items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
+            // {
+            //   label: 'Blog',
+            //   to: '/blog',
+            // },
             {
               label: 'GitHub',
               href: 'https://github.com/pockettojs/pocketto',

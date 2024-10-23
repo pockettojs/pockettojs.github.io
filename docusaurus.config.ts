@@ -64,6 +64,15 @@ const config: Config = {
   ],
 
   themeConfig: {
+    algolia: {
+      appId: '9B9A6KT33V',
+      apiKey: '6ffdc6b54e0faaa87a8e6586b306b6f4',
+      indexName: 'pocketto_docs',
+      contextualSearch: true,
+    },
+    search: {
+      placeholder: 'Search...',
+    },
     prism: {
       additionalLanguages: ['javascript'],
     },

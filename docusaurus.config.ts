@@ -63,7 +63,9 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
+    prism: {
+      additionalLanguages: ['javascript'],
+    },
     navbar: {
       title: 'Pocketto',
       logo: {

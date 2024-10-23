@@ -11,7 +11,7 @@ Data sharding is a method of partitioning data across multiple servers. It is a 
 To sharding the model data into different databases, you can declare `shardingMode` in your Model.
 
 ```ts
-import { Model, setMainDatabaseName, ShardingMode } from 'src/model/Model';
+import { Model, setMainDatabaseName, ShardingMode } from 'pocketto';
 
 setMainDatabaseName('master');
 

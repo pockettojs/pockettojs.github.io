@@ -9,3 +9,10 @@
   height: 200px;
   width: 200px;
 }
+
+.gifContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}

@@ -43,7 +43,7 @@ export function SalesInvoiceList({
 
 ### useRealtimeList - Configuration
 
-There is also options that you can pass to `useRealtime()`:
+There is also options that you can pass to `useRealtimeList()`:
 
 - animationDelay: Delay in milliseconds to wait your custom animation done. Default: `1ms`.
 - condition: A [query builder](/docs/data-modelling/query-builder#complex-queries---callback) condition to filter and sorting the data.

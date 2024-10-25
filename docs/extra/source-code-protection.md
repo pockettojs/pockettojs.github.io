@@ -15,7 +15,9 @@ If you have a different structure, you can modify the `tsconfig.json` file to ma
 
 ### Obfuscation
 
-Obfuscation is a technique to make your code unreadable to humans. It is a way to protect your code from reverse engineering. There are many tools available to obfuscate your code. Here are some popular tools:
+Obfuscation is a technique to make your code unreadable to humans. It is a way to protect your code from reverse engineering. There are many tools available to obfuscate your code.
+
+In this tutorial, we will use the `javascript-obfuscator` package to obfuscate our code.
 
 ### Steps
 

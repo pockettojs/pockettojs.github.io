@@ -79,9 +79,6 @@ const config: Config = {
     search: {
       placeholder: 'Search...',
     },
-    prism: {
-      additionalLanguages: ['javascript'],
-    },
     navbar: {
       title: 'Pocketto',
       logo: {

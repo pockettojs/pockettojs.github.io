@@ -65,6 +65,18 @@ invoice.items = [
   { description: 'Item 1', quantity: 2, unitPrice: 100 },
   { description: 'Item 2', quantity: 3, unitPrice: 150 },
 ];
+
+// or
+
+const invoice = new SalesInvoice({
+  invoiceNumber = 'INV-001',
+  customerName = 'John Doe',
+  remarks = 'This is a sample invoice.';
+  items = [
+    { description: 'Item 1', quantity: 2, unitPrice: 100 },
+    { description: 'Item 2', quantity: 3, unitPrice: 150 },
+  ],
+});
 ```
 
 ### Save an Instance

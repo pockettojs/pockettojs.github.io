@@ -11,7 +11,7 @@ function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container" style={{ marginTop: '-40px' }}>
+      <div className="container" style={{ marginTop: '-10px' }}>
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
         </Heading>

@@ -24,3 +24,23 @@ Depending on your project platform, you can pick one of the following installati
 - [Vue.js](/docs/installation/vue)
 <!-- - [Node.js](node) -->
 <!-- - [Bun](bun) -->
+
+### Debug for npm/yarn install
+
+If you found the issue for the python dependencies problem `ModuleNotFoundError: No module named 'distutils'`, you can try the following
+
+1. Install python 3.8 or above
+2. Install the `distutils` package by running the following command:
+venv init
+```bash
+python -m venv venv
+source venv/bin/activate
+pip install distutils
+```
+
+3. Install node-gyp globally by running the following command:
+```bash
+npm install -g node-gyp
+```
+
+You can now proceed with the installation of Pocketto in your project.

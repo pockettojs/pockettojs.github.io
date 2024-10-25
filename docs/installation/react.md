@@ -16,6 +16,10 @@ To use Pocketto in a React project, you need to install the `pocketto` and `pock
 npm install pocketto pocketto-react
 ```
 
+:::warning
+You might facing issue when install the package. In this case, [please refer to this solution](/docs/environment-setup#debug-for-npmyarn-install).
+:::
+
 Make sure you are enabled decorators in your project. If not, you can enable it by adding the following configuration to your `tsconfig.json` file.
 
 ```json title="tsconfig.json"

@@ -10,11 +10,16 @@ Please make sure you have go through the [Environment Setup](/docs/environment-s
 
 ### Installation
 
-To use Pocketto in a React project, you need to install the `pocketto` and `pocketto-react` package.
+To use Pocketto in a React Native project, you need to install the `pocketto` and `pocketto-react` package.
 
 ```bash
 npm install pocketto pocketto-react
 ```
+
+:::warning
+You might facing issue when install the package. In this case, [please refer to this solution](/docs/environment-setup#debug-for-npmyarn-install).
+:::
+
 
 Also, to install native dependencies in order to let pocketto work properly, you need to install the following packages.
 

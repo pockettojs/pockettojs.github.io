@@ -10,17 +10,15 @@ Please make sure you have go through the [Environment Setup](/docs/environment-s
 
 ### Installation
 
-To use Pocketto in a Vue project, you need to install the `pocketto` package.
+To use Pocketto in a Vue project, you need to install the `pocketto` and `pocketto-vue` package.
 
 ```bash
-npm install pocketto
+npm install pocketto pocketto-vue
 ```
 
-You also need to install the `pocketto-vue` in order to use the Vue Composables.
-
-```bash
-npm install pocketto-vue
-```
+:::warning
+You might facing issue when install the package. In this case, [please refer to this solution](/docs/environment-setup#debug-for-npmyarn-install).
+:::
 
 Make sure you are enabled decorators in your project. If not, you can enable it by adding the following configuration to your `tsconfig.json` file.
 

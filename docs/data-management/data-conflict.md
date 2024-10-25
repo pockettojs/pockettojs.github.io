@@ -6,11 +6,11 @@ sidebar_position: 4
 
 ### Introduction
 
-Under the hoods, pocketto are rely on the field `document._meta._rev` to trace for the revision of the document.
+Under the hoods, Pocketto are rely on the field `document._meta._rev` to trace for the revision of the document.
 
-When a document is updated, the revision number is incremented. This allows pocketto to detect conflicts when two clients try to update the same document at the same time.
+When a document is updated, the revision number is incremented. This allows Pocketto to detect conflicts when two clients try to update the same document at the same time.
 
-When a conflict occurs, pocketto will return a 409 (conflict) error to the client. The client can then resolve the conflict by fetching the latest version of the document, merging the changes, and then trying to update the document again.
+When a conflict occurs, it will return a 409 (conflict) error to the client. The client can then resolve the conflict by fetching the latest version of the document, merging the changes, and then trying to update the document again.
 
 ### Two Types of Conflicts
 

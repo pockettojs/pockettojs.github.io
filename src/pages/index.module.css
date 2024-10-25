@@ -16,6 +16,14 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .reducedMargin {
+    margin-top: -50px;
+  }
+}
+
+
+
 .buttons {
   display: flex;
   align-items: center;

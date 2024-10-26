@@ -12,8 +12,8 @@ Pocketto provides a set of Vue composables to interact with the Pocketto model i
 
 By using `useRealtimeList()` composable, the listing will auto retrieve new model when there is new data.
 
-```tsx
-{/* <script setup lang="ts"> */}
+```html
+<script setup lang="ts">
 import { SalesInvoice } from '@/models/SalesInvoice.p';
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
@@ -31,7 +31,7 @@ const router = useRouter();
 function navigateToInvoice(invoice: SalesInvoice) {
   router.push(`/invoices/${invoice.id}`);
 }
-{/* </script> */}
+</script>
 
 <template>
     <div>
@@ -54,8 +54,8 @@ There is also options that you can pass to `useRealtimeList()`:
 
 Example:
 
-```tsx
-{/* <script setup lang="ts"> */}
+```html
+<script setup lang="ts">
 import { SalesInvoice } from '@/models/SalesInvoice.p';
 import { ref } from 'vue';
 import { useRealtimeList } from 'pocketto-vue';
@@ -68,15 +68,15 @@ const salesInvoices = useRealtimeList(SalesInvoice, {
     changedItem.value = item;
   },
 });
-{/* </script> */}
+</script>
 ```
 
 ### useRealtime
 
 By using `useRealtime()` hook, it will auto reflected to other similar page that have same model id.
 
-```tsx
-{/* <script setup lang="ts"> */}
+```html
+<script setup lang="ts">
 import { SalesInvoice } from '@/models/SalesInvoice.p';
 import { ref } from 'vue';
 import { useRealtime } from 'pocketto-vue';
@@ -91,7 +91,7 @@ watch(() => route.params.id, (newId, oldId) => {
     invoice = useRealtime(SalesInvoice, newId as string);
   }
 });
-{/* </script> */}
+</script>
 
 <template>
     <div>

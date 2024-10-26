@@ -20,7 +20,6 @@ npm install pocketto pocketto-react
 You might facing issue when install the package. In this case, [please refer to this solution](/docs/environment-setup#debug-for-npmyarn-install).
 :::
 
-
 Also, to install native dependencies in order to let pocketto work properly, you need to install the following packages.
 
 ```bash

@@ -4,7 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Pocketto',
-  tagline: 'Offline, Realtime ORM solution for your web and mobile app',
+  tagline: 'Offline, realtime ORM solution for your web and mobile app',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here

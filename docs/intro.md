@@ -4,7 +4,7 @@ title: 'Introduction'
 sidebar_position: 1
 ---
 
-Pocketto is a CRUD tools that can let you manage your data across different platforms with ease. You can remain offline and sync when there is internet connection.
+Pocketto is a ORM (Object Relational Mapping) library that can let you manage your data across different platforms with ease. You can remain offline and sync when there is internet connection.
 
 ### Highlights
 - **Offline First Architecture**: You can use Pocketto without internet connection. Even in web application.

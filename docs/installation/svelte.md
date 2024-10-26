@@ -59,6 +59,12 @@ export default defineConfig({
 });
 ```
 
+Disable the `ssr` in the `+layout.ts` file.
+
+```ts title="src/+layout.ts"
+export const ssr = false;
+```
+
 ### Usage
 
 You can connect to a database via the `DatabaseManager.connect()` function. <br />

@@ -123,10 +123,10 @@ const config: Config = {
               label: 'Stack Overflow',
               href: 'https://stackoverflow.com/questions/tagged/pocketto',
             },
-            // {
-            //   label: 'Discord',
-            //   href: 'https://discordapp.com/invite/pocketto',
-            // },
+            {
+              label: 'Discord',
+              href: 'https://discord.com/invite/xBeGRdFuVX',
+            },
             // {
             //   label: 'Twitter',
             //   href: 'https://twitter.com/pocketto',

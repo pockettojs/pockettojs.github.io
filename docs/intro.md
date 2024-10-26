@@ -24,3 +24,4 @@ ample Projects
 - [React Example](https://github.com/pockettojs/pocketto-react-example)<br />
 - [React Native Example](https://github.com/pockettojs/PockettoReactNativeExample)<br />
 - [Vue Example](https://github.com/pockettojs/pocketto-vue-example)<br />
+- [Svelte Example](https://github.com/pockettojs/pocketto-svelte-example)<br />

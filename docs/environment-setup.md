@@ -21,9 +21,9 @@ Before you start setting up your environment, make sure you have the following i
 
 Depending on your project platform, you can pick one of the following installation methods:
 
-- [React](/docs/installation/react)
-- [React Native](/docs/installation/react-native)
-- [Vue.js](/docs/installation/vue)
+- [React](/docs/installation/frontend/react)
+- [React Native](/docs/installation/frontend/react-native)
+- [Vue.js](/docs/installation/frontend/vue)
 <!-- - [Node.js](node) -->
 <!-- - [Bun](bun) -->
 

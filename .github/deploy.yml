@@ -1,0 +1,42 @@
+name: Deploy from Source to Master
+
+on:
+  push:
+    branches:
+      - source
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Set deployment branch
+        run: echo "DEPLOYMENT_BRANCH=master" >> $GITHUB_ENV
+
+      - name: Run deploy script
+        run: npm run deploy
+
+      - name: Add CNAME file for custom domain
+        run: echo "pocketto.dev" > CNAME
+
+      - name: Commit and push changes to master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -B master
+          git add CNAME
+          git commit -m "Add CNAME for custom domain"
+          git push origin master --force

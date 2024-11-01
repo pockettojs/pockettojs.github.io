@@ -7,8 +7,9 @@ sidebar_position: 1
 Pocketto is a ORM (Object Relational Mapping) library that can let you manage your data across different platforms with ease. You can remain offline and sync when there is internet connection.
 
 ### Highlights
+
 - **Offline First Architecture**: You can use Pocketto without internet connection. Even in web application.
-- **Sync**: Sync your data across different platforms.
+- **Real Time Syncing**: Sync your data across different platforms.
 - **Run with different javascript environment**: Pocketto can run in different javascript environment like Node.js, Browser, React Native, so you don't need to rewrite your business logic in different platform.
 - **Encrypted**: Pocketto allow you to encrypts your data and store it locally.
 - **Open Source**: Pocketto is open source so everybody can use it and inspect the code to prevent any security issues.
@@ -21,10 +22,12 @@ To get started, [click here](/docs/environment-setup) to proceed.
 
 You can download and setup the example project from below:<br /><br />
 **Frontend**:<br />
+
 - [React Example](https://github.com/pockettojs/pocketto-react-example)<br />
 - [React Native Example](https://github.com/pockettojs/PockettoReactNativeExample)<br />
 - [Vue Example](https://github.com/pockettojs/pocketto-vue-example)<br />
 - [Svelte Example](https://github.com/pockettojs/pocketto-svelte-example)<br />
 
 **Backend**:<br />
-- [Bun](https://github.com/pockettojs/pocketto-bun-example)<br />
+
+- [Bun Example](https://github.com/pockettojs/pocketto-bun-example)<br />

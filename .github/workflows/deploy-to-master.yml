@@ -1,0 +1,67 @@
+# Run docusaurus deploy at "source" branch, to generate contents of build folder
+# then push them to "master" branch
+# cannot deploy directly from "source" branch, something artifcats missing
+name: Build & Deploy to Master Branch
+
+on:
+  push:
+    branches:
+      - source  # Trigger on pushes to the source branch
+
+jobs:
+  build:
+    name: Build Docusaurus
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Fetch all history for all branches
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: yarn
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Build website
+        run: yarn build
+
+      - name: Upload Build Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: docusaurus-build  # This should match the name used in the download step
+          path: build
+
+  deploy:
+    name: Deploy to Master Branch
+    needs: build
+    permissions:
+      contents: write  # Allows pushing to the `master` branch
+      pages: write     # Allows deployment to GitHub Pages
+      id-token: write  # Allows deployment to use ID token
+        
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out `master` branch
+        uses: actions/checkout@v4
+        with:
+          ref: master  # Check out the `master` branch
+
+      - name: Download Build Artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: docusaurus-build  # Make sure this matches the upload name
+
+      - name: Commit and Push to `master`
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Use the GitHub token for authentication
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .  # Add all files in the current directory
+          git commit -m "Deploy Docusaurus site" || echo "No changes to commit"  # Prevents error if there are no changes
+          git push origin master --force

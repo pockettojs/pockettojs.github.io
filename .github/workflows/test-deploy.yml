@@ -1,0 +1,37 @@
+name: Build Docusaurus on Pull Request
+
+on:
+  pull_request:
+    branches:
+      - source  # Trigger on pull requests to the source branch
+
+jobs:
+  build:
+    name: Build Docusaurus
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Fetch all history for all branches
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: yarn
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Build website
+        run: yarn build
+
+      - name: Verify Build Output
+        run: |
+          if [ ! -d "build" ]; then
+            echo "Build directory does not exist. Exiting."
+            exit 1
+          else
+            echo "Build directory exists."
+          fi

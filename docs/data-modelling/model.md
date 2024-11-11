@@ -94,6 +94,13 @@ To find an instance of a model, you can use the `find` method.
 ```ts
 const invoice = await SalesInvoice.find('INV-001');
 ```
+### Find all Instances
+
+To find an instance of a model, you can use the `find` method.
+
+```ts
+const invoice = await SalesInvoice.all();
+```
 
 ### Update an Instance
 
@@ -110,5 +117,5 @@ invoice.update({
 To delete an instance of a model, you can use the `delete` method.
 
 ```ts
-await invoice.delete();
+await invoice.delete(true);
 ```

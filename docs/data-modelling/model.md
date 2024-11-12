@@ -96,7 +96,7 @@ const invoice = await SalesInvoice.find('INV-001');
 ```
 ### Find all Instances
 
-To find an instance of a model, you can use the `find` method.
+To get all instances of a model, you can use the `all` method.
 
 ```ts
 const invoice = await SalesInvoice.all();

@@ -41,7 +41,7 @@ If you found the issue for the python dependencies problem `ModuleNotFoundError:
 ```bash
 python -m venv venv
 source venv/bin/activate
-pip install distutils
+pip install setuptools
 ```
 
 3. Install node-gyp globally by running the following command:

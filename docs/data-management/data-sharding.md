@@ -10,10 +10,19 @@ Data sharding is a method of partitioning data across multiple servers. It is a 
 
 To sharding the model data into different databases, you can declare `shardingMode` in your model.
 
+Please also setup for `setMainDatabaseName` before using the sharding mode. The first argument is the database name, and the second argument is the database adapter.
+
+Available adapters:
+- `memory`: An adapter to store data in memory.
+- `idb`: An adapter to store data in IndexedDB.
+- `leveldb`: An adapter to store data in LevelDB.
+- `websql`: An adapter to store data in WebSQL.
+- `http`: An adapter to store data in a remote server.
+
 ```ts
 import { Model, setMainDatabaseName, ShardingMode } from 'pocketto';
 
-setMainDatabaseName('master');
+setMainDatabaseName('master', 'idb');
 
 class SalesInvoice extends Model {
   static dbName = 'master';

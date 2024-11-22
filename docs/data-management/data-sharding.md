@@ -20,9 +20,10 @@ Available adapters:
 - `http`: An adapter to store data in a remote server.
 
 ```ts
-import { Model, setMainDatabaseName, ShardingMode } from 'pocketto';
+import { p, Model, ShardingMode } from 'pocketto';
 
-setMainDatabaseName('master', 'idb');
+p.setMainDatabaseName('master', 'idb');
+p.bootDatabases();
 
 class SalesInvoice extends Model {
   static dbName = 'master';
